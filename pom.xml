@@ -24,6 +24,9 @@
         <apache-commons-lang3.version>3.18.0</apache-commons-lang3.version>
         <!-- google -->
         <google-guava.version>33.4.8-jre</google-guava.version>
+        <!-- meowu -->
+        <meowu-starter-commons.version>1.0.0</meowu-starter-commons.version>
+        <meowu-starter-web.version>1.0.0</meowu-starter-web.version>
     </properties>
 
     <dependencyManagement>
@@ -55,6 +58,19 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${google-guava.version}</version>
+            </dependency>
+
+            <!-- meowu -->
+            <dependency>
+                <groupId>com.meowu.starter</groupId>
+                <artifactId>commons</artifactId>
+                <version>${meowu-starter-commons.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.meowu.starter</groupId>
+                <artifactId>web</artifactId>
+                <version>${meowu-starter-web.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
