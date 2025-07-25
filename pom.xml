@@ -19,6 +19,11 @@
 
         <!-- spring -->
         <spring-boot-dependencies.version>3.3.2</spring-boot-dependencies.version>
+        <!-- apache -->
+        <apache-commons-collections4.version>4.5.0</apache-commons-collections4.version>
+        <apache-commons-lang3.version>3.18.0</apache-commons-lang3.version>
+        <!-- google -->
+        <google-guava.version>33.4.8-jre</google-guava.version>
     </properties>
 
     <dependencyManagement>
@@ -30,6 +35,26 @@
                 <version>${spring-boot-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <!-- apache -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${apache-commons-collections4.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${apache-commons-lang3.version}</version>
+            </dependency>
+
+            <!-- google -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${google-guava.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
