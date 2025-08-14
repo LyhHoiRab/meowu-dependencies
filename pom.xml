@@ -27,6 +27,7 @@
         <!-- meowu -->
         <meowu-starter-commons.version>1.0.0</meowu-starter-commons.version>
         <meowu-starter-web.version>1.0.0</meowu-starter-web.version>
+        <meowu-svc-support-cli.version>1.0.0</meowu-svc-support-cli.version>
     </properties>
 
     <dependencyManagement>
@@ -71,6 +72,12 @@
                 <groupId>com.meowu.starter</groupId>
                 <artifactId>web</artifactId>
                 <version>${meowu-starter-web.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.meowu.svc</groupId>
+                <artifactId>support-svc</artifactId>
+                <version>${meowu-svc-support-cli.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
