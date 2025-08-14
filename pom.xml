@@ -76,7 +76,7 @@
 
             <dependency>
                 <groupId>com.meowu.svc</groupId>
-                <artifactId>support-svc</artifactId>
+                <artifactId>support-cli</artifactId>
                 <version>${meowu-svc-support-cli.version}</version>
             </dependency>
         </dependencies>
